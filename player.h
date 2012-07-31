@@ -16,7 +16,7 @@ private:
 	void clPrintPlayer(WINDOW *win);
 
 public:
-	Player(WINDOW *win, int startPosy, int startPosx, int winHeight, int winWidth);
+	Player(int startPosy, int startPosx, int winHeight, int winWidth);
 	~Player();
 
 	void printPlayer(WINDOW *win);

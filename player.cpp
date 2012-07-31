@@ -1,6 +1,6 @@
 #include "player.h"
 
-Player::Player(WINDOW *win, int startPosy, int startPosx, int winHeight, int winWidth){
+Player::Player(int startPosy, int startPosx, int winHeight, int winWidth){
 	posx = startPosx;
 	posy = startPosy;
 	height = winHeight;
@@ -43,6 +43,7 @@ void Player::move(WINDOW *win, int move){
 				posx = width - 3;
 				printPlayer(win);
 			}
+			break;
 		case KEY_RIGHT:
 			if((posx + 1) != width - 2){
 				posx++;
@@ -51,6 +52,7 @@ void Player::move(WINDOW *win, int move){
 				posx = 0;
 				printPlayer(win);
 			}
+			break;
 		case ' ':
 			if (posy == (height - 4)){
 				posy = 1;
@@ -59,5 +61,6 @@ void Player::move(WINDOW *win, int move){
 				posy = height - 4;
 				printPlayer(win);
 			}
+			break;
 	}
 }

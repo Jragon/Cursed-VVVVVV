@@ -17,7 +17,7 @@ int main()
 	int posy = height - 4;
 
 	Board board(height, width);
-	Player player(board.win, posy, posx, height, width);
+	Player player(posy, posx, height, width);
 
 	player.printPlayer(board.win);
 	board.refresh();
