@@ -1,3 +1,5 @@
 This is a small little ncurses game.
 
 Under the DWETFYWWI license.
+
+Controlls: Left arrow key moves you left, the right arrow key moves you right, and the space bar flips you.
