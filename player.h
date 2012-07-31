@@ -10,7 +10,6 @@ private:
 	int posy;
 	int height;
 	int width;
-
 	
 	void flPrintPlayer(WINDOW *win);
 	void clPrintPlayer(WINDOW *win);
