@@ -19,6 +19,7 @@ void Player::printPlayer(WINDOW *win){
 void Player::flPrintPlayer(WINDOW *win){
 	int localPosy = posy;
 	int localPosx = posx;
+	
 	mvwaddstr(win, localPosy, localPosx, " 0");
 	mvwaddstr(win, localPosy += 1, localPosx, "-|-");
 	mvwaddstr(win, localPosy += 1, localPosx, "/ \\");
